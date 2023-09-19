@@ -33,7 +33,7 @@ export default function Signin() {
     };
 
     const handleButtonClick = () => {
-        alert('logged in successfully');
+        alert('account created successfully');
       };
 
   return (
@@ -60,7 +60,7 @@ export default function Signin() {
             </form>
             <div className='mt-9'>
                 <p>Already a user?</p>
-               <Link to='/login' className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</Link>
+               <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' ><Link to='/login'>Log in</Link> </button>
                 <div>
                     <p className='font-thin ml-3'>For further support, you may visit the Help Center or contact our <br></br>customer service team.</p>
                 </div>

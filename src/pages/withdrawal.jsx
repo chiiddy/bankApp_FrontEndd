@@ -47,7 +47,7 @@ export default function Withdrawal() {
       }
     };
     const handleButtonClick = () => {
-      alert('logged in successfully');
+      alert('withdrawn successfully');
     };
   return (
     <div>
@@ -74,7 +74,7 @@ export default function Withdrawal() {
                 <input type='number' placeholder='0.00' id='amount' value={inputs.amount} onChange={handleOnChange} className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-3 mt-[2.2rem]' />
                 </div>
                 <div>
-                <button onClick={handleButtonClick} className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'>Withdraw</button>
+                <button onClick={handleButtonClick} className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'> <Link to='/home'>Withdraw</Link></button>
                 </div>
             </form>
         </div>
