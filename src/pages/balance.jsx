@@ -15,7 +15,7 @@ export default function Balance() {
 
 const balance = () => {
   try {
-     axios.get("https://localhost:8080/api/transactions/"+tokenData?.user?._id,  {
+     axios.get("https://magneto-banking-application.onrender.com/api/transactions/"+tokenData?.user?._id,  {
       headers: {
         Authorization: `Bearer ${tokenData?.token}`,
         Accept: "application/json",
